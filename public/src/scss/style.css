@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 70px;
+}
+header .nav .menu ul {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+}
+header .nav .menu ul .icon-li {
+  display: none;
+}
+@media (min-width: 768px) {
+  header .nav .menu ul .icon-li {
+    display: block;
+  }
+}
+header .nav .menu ul li {
+  padding: 0 20px;
+  font-size: 12px;
+}
+header .nav .menu ul li i {
+  padding: 0 5px;
+}
+header .nav .menu ul li .icon-navbar {
+  background-color: #fff;
+  border-radius: 50%;
+}
+header .nav .menu ul li .icon-navbar i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(4, 4, 153, 0.74);
+  width: 45px;
+  height: 45px;
+  font-size: 25px;
+}
+
+body {
+  height: 120vh;
+  background-color: #303896;
+}
+@media (min-width: 768px) {
+  body {
+    background-image: url("https://www.denizmall.az/site/templates/img/index_image_1.png");
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: 45rem;
+  }
+}
+body .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+body .container h2 {
+  color: #fff;
+  font-size: 37px;
+  font-weight: 300;
+  margin-bottom: 35px;
+  padding: 0 45px;
+}
+body .container .cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 0 10px;
+}
+@media (min-width: 768px) {
+  body .container .cards {
+    width: 50%;
+  }
+}
+body .container .cards .card {
+  background-color: #4e52b7;
+  width: calc(100% - 20px);
+  height: 120px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  transform: translate(0, 5px);
+  border-radius: 10px;
+  position: relative;
+}
+@media (min-width: 480px) {
+  body .container .cards .card {
+    width: calc(45% - 20px);
+  }
+}
+body .container .cards .card .card-inner {
+  padding: 10px;
+}
+body .container .cards .card .card-inner .content {
+  font-size: 14px;
+  color: #fff;
+}
+body .container .cards .card .card-inner .card-icon {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+body .container .cards .card .card-inner .card-icon i {
+  color: #fff;
+  font-size: 30px;
+}
+body .container .cards .card:hover {
+  transform: translate(0px, 0px);
+  box-shadow: none;
+}/*# sourceMappingURL=style.css.map */

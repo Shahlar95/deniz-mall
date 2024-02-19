@@ -1,0 +1,95 @@
+body{
+
+    
+    height: 120vh;
+    background-color: #303896;
+
+    @media (min-width: 768px) {
+        background-image: url("https://www.denizmall.az/site/templates/img/index_image_1.png");
+        background-repeat: no-repeat;
+        background-position: 100% ;
+        background-size: 45rem;
+    }
+
+   .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+
+    h2{
+        color: #fff;
+        font-size: 37px;
+        font-weight: 300;
+        margin-bottom: 35px;
+        padding: 0 45px;
+        
+    }
+
+    .cards{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 0 10px;
+
+        @media (min-width: 768px) {
+            width: 50%;
+        }
+            
+            .card{
+                background-color: #4e52b7;
+                width: calc(100% - 20px);
+                height: 120px;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                cursor: pointer;
+                transition: .3s ease;
+                transform: translate(0,5px);
+                border-radius: 10px;
+                position: relative;
+
+                @media (min-width: 480px) {
+                    width: calc(45% - 20px);
+                }
+
+                .card-inner{
+                    padding: 10px;
+                    
+                    
+                    .content{
+                        font-size: 14px;
+                        color: #fff;
+        
+                        
+                    }
+                    .card-icon{
+                        position: absolute;
+                        bottom: 15px;
+                        right: 15px;
+                        
+                        i{
+                           color: #fff;
+                           font-size: 30px; 
+                        }
+
+                        
+                    }
+                }
+                }
+
+
+               
+                
+    
+              
+           
+            .card:hover{
+                transform: translate(0px,0px);
+                box-shadow: none;
+            }
+        }
+       
+    }
+   }
+
